@@ -1,0 +1,36 @@
+Reference : https://www.w3schools.com/sql/exercise.asp
+
+Select * from Customers Order By City Desc
+
+Select * from Customers Order By Country, City.
+
+Insert into Customers (CustomerName, Address, City, PostalCode, Country) Values('A', 'Avenue', 'somewhere', '123', '?')
+
+Select * from Customers Where PostalCode is Null
+
+Update Customers Set City='San Francisco';
+
+Update Customers Set City='San Francisco', Country='US' Where CustomerID=32;
+
+Delete from Customers Where Country='US';
+
+Delete from Customers; 
+
+Select AVG(Price) from Products;
+
+Select * from Customers where City Like 'a%'  // the value of the City column starts with 'a'
+
+Select * from Customers where City like '%a%'  // the value of the City column contains the letter 'a'
+
+Select * from Customers where City Like '_a%'   // select all records where the second letter of the City is an 'a'
+
+Select * from Customers where City Like '[acs]%'; // select all recrods where the first letter of the City is 'a' or 'c' or 's'
+
+Select * from Customers where City Like '[a-e]%'; // anything from 'a' to 'e'
+
+Select * from Customers where City Like '[^abc]%'; // anything except 'a', 'b', 'c'
+
+Select * from Customers where country in ('US', 'France')
+
+
+
