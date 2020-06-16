@@ -1,0 +1,10 @@
+-- 1. users(id, name), products(id, name, user_id) tables
+
+Select * from users Inner Join products ON users.id=products.user_id;  -- select all users with all their columns that own at least one product.
+
+Select p.name, u.name From Users u Right Join products p ON u.id=p.user_id -- the product which has no user should be selected too.
+
+
+-- 2. customers(id, name), products(id, name), wish_products(user_id, product_id) tables
+
+Select u.id, u.name, p.name From users u Left Join wish_products wp ON u.id=wp.user_id Left Join products p ON wp.product_id=p.id; -- including user with no wish_product
