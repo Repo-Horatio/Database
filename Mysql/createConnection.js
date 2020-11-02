@@ -16,6 +16,11 @@ connection.query(`SELECT * FROM tables WHERE tables.id=${connection.escape(id)}`
   console.log('DATA : ', results);
 });
 
+// connection.query(`SELECT * FROM tables WHERE tables.id=?`,[id], function(error, results) { // escape for preventing from sql injection
+//   if(error) throw error;
+//   console.log('DATA : ', results);
+// });
+
 module.exports = connection;
 
 //  "Client does not support authentication protocol requested by server; consider upgrading MySQL client"
