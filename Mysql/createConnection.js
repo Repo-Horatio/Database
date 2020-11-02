@@ -5,6 +5,7 @@ let connection = mysql.createConnection({
   user: "root",
   password: password,
   database: "DB_name",
+  // multipleStatements:true // mutliplt query can be inserted using ';', not safe
 });
 
 connection.connect();
