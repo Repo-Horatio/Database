@@ -1,4 +1,5 @@
 const password = process.env.DB_PASSWORD;
+const sanitizeHtml=require('sanitize-html');
 
 let connection = mysql.createConnection({
   host: "localhost",
@@ -11,6 +12,7 @@ let connection = mysql.createConnection({
 connection.connect();
 
 let id=1;
+// let santizedId=sanitizeHtml(req.body.id)
 connection.query(`SELECT * FROM tables WHERE tables.id=${connection.escape(id)}`, function(error, results) { // escape for preventing from sql injection
   if(error) throw error;
   console.log('DATA : ', results);
