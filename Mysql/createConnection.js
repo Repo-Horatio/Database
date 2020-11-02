@@ -9,7 +9,8 @@ let connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query('SELECT * FROM tables', function(error, results) {
+let id=1;
+connection.query(`SELECT * FROM tables WHERE tables.id=${connection.escape(id)}`, function(error, results) { // escape for preventing from sql injection
   if(error) throw error;
   console.log('DATA : ', results);
 });
