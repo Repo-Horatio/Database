@@ -13,10 +13,12 @@ connection.connect();
 
 let id=1;
 // let santizedId=sanitizeHtml(req.body.id)
-connection.query(`SELECT * FROM tables WHERE tables.id=${connection.escape(id)}`, function(error, results) { // escape for preventing from sql injection
+let queryData=connection.query(`SELECT * FROM tables WHERE tables.id=${connection.escape(id)}`, function(error, results) { // escape for preventing from sql injection
   if(error) throw error;
   console.log('DATA : ', results);
 });
+
+console.log(queryData.sql);
 
 // connection.query(`SELECT * FROM tables WHERE tables.id=?`,[id], function(error, results) { // escape for preventing from sql injection
 //   if(error) throw error;
