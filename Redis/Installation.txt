@@ -1,0 +1,25 @@
+https://redis.io
+
+wget https://download.redis.io/releases/redis-version.tar.gz
+
+tar xzf redis-version.tar.gz
+
+cd redis-version
+
+~/redis-version make // executes makefile
+
+~/redis-version make test
+
+~/redis-version src/redis-server
+
+        Port: 6379
+        PID: 79105
+
+
+- another terminal
+
+~/Desktop cd redis-version
+
+~/D/redis-version src/redis-cli
+
+127.0.0.1:6379>

@@ -1,34 +1,35 @@
 * Reference: https://whitepaek.tistory.com/16
 
-(install homebrew first on the official homebrew site.)
 
-brew update
+    (install homebrew first on the official homebrew site.)
 
-(brew search mysql)
+    brew update
+
+    (brew search mysql)
 
 - installation 
 
-brew install mysql
+    brew install mysql
 
-(brew list)
+    (brew list)
 
-mysql.server start
+    mysql.server start
 
-mysql_secure_installation
+    mysql_secure_installation
 
-mysql -u root -p
+    mysql -u root -p
 
-exit/quit
+    exit/quit
 
-mysql.server stop
+    mysql.server stop
 
 
 - deletion
 
-sudo rm -rf/usr/local/var/mysql
+    sudo rm -rf/usr/local/var/mysql
 
-sudo rm -rf/usr/local/bin/mysql*
+    sudo rm -rf/usr/local/bin/mysql*
 
-sudo rm -rf/usr/local/Cellar/mysql
+    sudo rm -rf/usr/local/Cellar/mysql
 
-(brew list)
+        (brew list)
