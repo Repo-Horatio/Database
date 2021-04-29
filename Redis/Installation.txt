@@ -13,7 +13,7 @@ cd redis-version
 ~/redis-version src/redis-server
 
         Port: 6379
-        PID: 79105
+        PID: 
 
 
 - another terminal
