@@ -1,0 +1,35 @@
+SQL(Structured Query Language)
+
+
+
+    DDL(Data Definition Language)
+
+        Create
+        Alter
+        Drop
+        Truncate
+
+
+    DML(Data Manipulation Language)
+
+        Select
+        Insert
+        Delete
+        Update
+
+
+    DQL(Data Query Language)
+
+        Select
+
+
+    DCL(Data Contorl Language)
+
+        Grant
+        Revoke
+
+
+    TCL(Transaction Control Language)
+
+        Commit
+        Rollback
