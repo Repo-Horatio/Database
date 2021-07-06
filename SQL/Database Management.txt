@@ -1,0 +1,9 @@
+-- as a superuser
+
+GRANT SELECT ON <table> TO <user>;
+
+    GRANT    
+
+REVOKE SELECT ON <table> FROM <user>;
+
+    REVOKE   
