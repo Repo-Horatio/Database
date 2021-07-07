@@ -7,3 +7,11 @@ GRANT SELECT ON <table> TO <user>;
 REVOKE SELECT ON <table> FROM <user>;
 
     REVOKE   
+
+
+CREATE DOMAIN Score SMALLINT CHECK (VALUE >= 0 AND VALUE <=10)
+
+CREATE TYPE spiciness AS (
+            food_id UUID,
+            score Score
+        )
