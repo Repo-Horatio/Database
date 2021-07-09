@@ -9,9 +9,28 @@ REVOKE SELECT ON <table> FROM <user>;
     REVOKE   
 
 
+
+
+
 CREATE DOMAIN Score SMALLINT CHECK (VALUE >= 0 AND VALUE <=10)
 
 CREATE TYPE spiciness AS (
             food_id UUID,
             score Score
         )
+
+
+
+TRANSACTION
+
+    BEGIN;
+
+        BEGIN
+
+    ROLLBACK;
+        
+        ROLLBACK
+
+    END;
+
+        COMMIT 
