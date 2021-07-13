@@ -12,3 +12,4 @@
     Select u.id, u.name, p.name From users u Left Join wish_products wp ON u.id=wp.user_id Left Join products p ON wp.product_id=p.id; -- including user with no wish_product
 
 
+SELECT EXTRACT (YEAR FROM date 'YYYY/MM/DD') AS YEAR 
