@@ -42,7 +42,7 @@ Select * from Orders Inner Join Customers ON Orders.CustomerID=Customers.Custome
 
 Select * from Orders Right Join Customers ON Orders.CustomerID=Customers.CustomerID; -- records from the Customers table plus
 
-                                                                                        all the matches in the Orders table.
+                                                                                     -- all the matches in the Orders table.
                                                                                         
 Select count(CustomerID), Country From Customers Group by Country; -- list the number of customers in each country.
 
