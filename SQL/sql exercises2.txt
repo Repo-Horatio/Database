@@ -14,6 +14,30 @@
 
 SELECT EXTRACT (YEAR FROM date 'YYYY/MM/DD') AS YEAR 
 
+
 SELF JOIN
 
+    https://www.w3schools.com/sql/sql_join_self.asp
+
+        SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+        FROM Customers A, Customers B
+        WHERE A.CustomerID <> B.CustomerID  --  not equal
+        AND A.City = B.City 
+        ORDER BY A.City;
+
 OUTER JOIN
+
+    https://www.w3schools.com/sql/sql_join_left.asp
+    https://www.w3schools.com/sql/sql_join_right.asp
+
+    LEFT OUTER JOIN -- table A, table B then A LEFT OUTER JOIN B means returning A with the matching records from table B. if no match on table A then the result is <NULL>
+    
+        SELECT Customers.CustomerName, Orders.OrderID
+        FROM Customers
+        LEFT JOIN Orders
+        ON Customers.CustomerID=Orders.CustomerID
+        ORDER BY Customers.CustomerName;
+
+    RIGHT OUTER JOIN 
+
+        vice versa
