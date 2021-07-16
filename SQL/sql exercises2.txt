@@ -41,3 +41,12 @@ OUTER JOIN
     RIGHT OUTER JOIN 
 
         vice versa
+
+
+GROUP BY 
+
+    https://www.w3schools.com/sql/sql_groupby.asp
+
+    SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders  -- grouping orders with ShipperName. COUNT is an aggregate function
+    LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
+    GROUP BY ShipperName;
